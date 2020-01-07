@@ -1,7 +1,6 @@
 {
   "name": "15",
   "version": "1.0.0",
-  "description": "",
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1"
@@ -13,5 +12,14 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raissa-v/Hot-Restaurant.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raissa-v/Hot-Restaurant/issues"
+  },
+  "homepage": "https://github.com/raissa-v/Hot-Restaurant#readme",
+  "description": ""
 }
