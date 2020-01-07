@@ -14,21 +14,7 @@ var customers = [
         customerID: "Neil"
     }
 ];
-
-// Basic route that sends the user first to the AJAX Page
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "tables.html"));
-  });
-  
-  app.get("/add", function(req, res) {
-    res.sendFile(path.join(__dirname, "reserves.html"));
-  });
-  
-  // Displays all characters
-  app.get("/api/customers", function(req, res) {
-    return res.json(characters);
-  });
-  
+ 
   app.get("/api/customers/:customers", function(req, res) {
     var chosen = req.params.customers;
   
