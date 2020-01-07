@@ -37,7 +37,7 @@ var customers = [
   
     console.log(newCustomer);
   
-    characters.push(newCustomer);
+    customers.push(newCustomer);
   
     res.json(newCustomer);
   });
