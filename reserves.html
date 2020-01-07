@@ -48,3 +48,24 @@
           </div>
           
           </div>
+
+          <script type="text/javascript">
+            // Question: What does this code do?
+            $("#add-btn").on("click", function(event) {
+              event.preventDefault();
+              var newCustomer = {
+                name: $("#name").val().trim(),
+                phonenumber: $("#phoneNumber").val().trim(),
+                email: $("#email1").val().trim(),
+                ID: $("#uniqueID").val().trim()
+              };
+        
+              // Question: What does this code do??
+              $.post("/api/waitlist", newCustomer)
+                .then(function(data) {
+                  console.log("reserves.html", data);
+                  alert("You are placed into the waitlist");
+                });
+            });
+          </script>
+        
